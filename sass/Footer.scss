@@ -1,0 +1,32 @@
+.footer {
+  padding: 4rem 0;
+  background: var(--Dark-Blue);
+
+  &__logo {
+    img {
+      fill: #fff !important;
+    }
+  }
+
+  &__list {
+    background: transparent !important;
+  }
+
+  &__links {
+    @media (max-width: 991.98px) {
+      padding-left: 0rem;
+    }
+  }
+
+  &__button {
+    @media (max-width: 991.98px) {
+      justify-content: start !important;
+    }
+  }
+
+  &__reserved {
+    @media (max-width: 991.98px) {
+      text-align: start !important;
+    }
+  }
+}

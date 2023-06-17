@@ -1,0 +1,150 @@
+.hero {
+  overflow-y: hidden;
+
+  &__main {
+    height: 90vh;
+
+    @media (max-width: 991.98px) {
+      height: 35rem;
+    }
+  }
+
+  &__mobile {
+    @media (max-width: 991.98px) {
+      margin-top: -18rem;
+    }
+
+    @media (max-width: 567.98px) {
+      margin-top: -10rem;
+    }
+
+    @media (max-width: 425.98px) {
+      margin-top: -16rem;
+    }
+  }
+
+  &__img {
+    top: -10rem;
+    right: 0;
+    max-width: 53rem;
+    overflow: hidden !important;
+
+    @media (max-width: 1399.98px) {
+      top: -10.5rem;
+      max-width: 42rem;
+    }
+
+    @media (max-width: 1199.98px) {
+      top: -10.5rem;
+      max-width: 30rem;
+    }
+  }
+
+  &__content {
+    @media (max-width: 991.98px) {
+      position: absolute;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      display: grid;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+  }
+
+  &__paragraph {
+    max-width: 35rem;
+
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    @media (max-width: 991.98px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__tab {
+    display: none;
+
+    @media (max-width: 991.98px) {
+      display: flex;
+    }
+
+    &__img_1 {
+      margin-top: -15rem;
+
+      img {
+        height: 70rem;
+
+        @media (max-width: 767.98px) {
+          height: 60rem;
+        }
+
+        @media (max-width: 567.98px) {
+          height: 50rem;
+        }
+
+        @media (max-width: 425.98px) {
+          height: 45rem;
+        }
+      }
+    }
+
+    &__img_2 {
+      top: -3rem;
+      left: 50%;
+      transform: translate(-50%);
+
+      @media (max-width: 567.98px) {
+        top: 2rem;
+      }
+
+      img {
+        height: 50rem;
+
+        @media (max-width: 767.98px) {
+          height: 40rem;
+        }
+
+        @media (max-width: 567.98px) {
+          height: 30rem;
+        }
+
+        @media (max-width: 425.98px) {
+          height: 20rem;
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  top: 0;
+  right: -12%;
+  overflow-x: hidden;
+
+  @media (max-width: 1199.98px) {
+    top: 4%;
+    right: -13%;
+  }
+
+  &__img {
+    max-width: 50rem;
+
+    @media (max-width: 1399.98px) {
+      max-width: 40rem;
+    }
+
+    @media (max-width: 1199.98px) {
+      max-width: 35rem;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Dark-Blue: hsl(233, 26%, 24%);
+
+  --main-text: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.body {
+  color: var(--main-text);
+}
+
+.title {
+  color: var(--Dark-Blue) !important;
+}
+
+.text-title-tab {
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+}
+
+.text-paragraph-tab {
+  @media (max-width: 991.98px) {
+    text-align: center;
+    max-width: max-content !important;
+  }
+}
+
+.text-margin-none {
+  @media (max-width: 991.98px) {
+    margin-top: 1rem !important;
+  }
+}
+
+.content-center {
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0 !important;
+}
+
+.font-xs {
+  font-size: 14px;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.card {
+  background: transparent;
+}
+
+.main--btn {
+  padding: 0.6rem 2rem;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+}
+
+@media (max-width: 991.98px) {
+  .desktop__img {
+    display: none !important;
+  }
+}

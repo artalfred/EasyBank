@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+
+    <title>EasyBank</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg fixed-top nav">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="/"
+          ><img src="./images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link body" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link body" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link body" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link body" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link body" href="#">Careers</a>
+            </li>
+          </ul>
+
+          <div>
+            <button class="btn main--btn rounded-5 text-light">
+              Request Invite
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero position-relative">
+      <div class="hero__tab justify-content-end">
+        <div class="hero__tab__img_1">
+          <div class="card border-0">
+            <img
+              class=""
+              src="./images/bg-intro-mobile.svg"
+              alt="hero-mobile"
+            />
+          </div>
+        </div>
+
+        <div class="hero__tab__img_2 position-absolute">
+          <div class="card border-0">
+            <img src="./images/image-mockups.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__mobile">
+        <section class="hero__main position-relative">
+          <div
+            class="position-absolute top-50 start-0 translate-middle-y w-100 hero__content"
+          >
+            <h1 class="display-4 mt-5 title hero__title">
+              Next generation <br />
+              digital banking
+            </h1>
+
+            <p class="body font-md mt-4 hero__paragraph">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+
+            <div class="hero__button" style="margin-top: 2rem">
+              <button class="btn main--btn rounded-5 text-light">
+                Request Invite
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="position-absolute hero__img desktop__img">
+        <img
+          class="hero__imgIntro"
+          src="./images/bg-intro-desktop.svg"
+          alt="logo"
+        />
+      </div>
+    </div>
+
+    <div
+      class="mobile d-flex justify-content-end position-absolute overflow-hidden desktop__img"
+    >
+      <div class="card border-0 overflow-hidden mobile__img">
+        <img src="./images/image-mockups.png" alt="phone" />
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <section class="section_2">
+      <div class="container">
+        <h1 class="display-6 title text-title-tab">Why choose Easybank?</h1>
+        <p
+          class="body font-md mt-4 text-paragraph-tab"
+          style="max-width: 35rem"
+        >
+          We leverage Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before.
+        </p>
+
+        <div class="row gx-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_2__card">
+              <div class="content-center">
+                <img
+                  style="width: 4rem"
+                  src="./images/icon-online.svg"
+                  alt="EasyBank_cards"
+                />
+              </div>
+
+              <div class="card-content">
+                <h5 class="title text-title-tab" style="margin-top: 2rem">
+                  Online Banking
+                </h5>
+
+                <p
+                  class="font-sm body text-paragraph-tab text-margin-none"
+                  style="margin-top: 2rem"
+                >
+                  Our modern web and mobile applications allow you to keep track
+                  of your finances wherever you are in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_2__card">
+              <div class="content-center">
+                <img
+                  style="width: 4rem"
+                  src="./images/icon-budgeting.svg"
+                  alt="EasyBank_cards"
+                />
+              </div>
+
+              <div class="card-content">
+                <h5 class="title text-title-tab" style="margin-top: 2rem">
+                  Simple Budgeting
+                </h5>
+
+                <p
+                  class="font-sm body text-paragraph-tab text-margin-none"
+                  style="margin-top: 2rem"
+                >
+                  See exactly where your money goes each month. Receive
+                  notifications when you're close to hitting your limits.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_2__card">
+              <div class="content-center">
+                <img
+                  style="width: 4rem"
+                  src="./images/icon-onboarding.svg"
+                  alt="EasyBank_cards"
+                />
+              </div>
+
+              <div class="card-content">
+                <h5 class="title text-title-tab" style="margin-top: 2rem">
+                  Fast Onboarding
+                </h5>
+
+                <p
+                  class="font-sm body text-paragraph-tab text-margin-none"
+                  style="margin-top: 2rem"
+                >
+                  We don't do branches. Open your account in minutes online and
+                  start taking control of your finances right away.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_2__card">
+              <div class="content-center">
+                <img
+                  style="width: 4rem"
+                  src="./images/icon-api.svg"
+                  alt="EasyBank_cards"
+                />
+              </div>
+
+              <div class="card-content">
+                <h5 class="title text-title-tab" style="margin-top: 2rem">
+                  Open API
+                </h5>
+
+                <p
+                  class="font-sm body text-paragraph-tab text-margin-none"
+                  style="margin-top: 2rem"
+                >
+                  Manage your savings, investments, pension, and much more from
+                  one account. Tracking your money has never been easier.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section_3">
+      <div class="container">
+        <h1 class="display-6 title text-title-tab">Latest Articles</h1>
+
+        <div class="row gx-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_3__card">
+              <div class="overflow-hidden section_3__img">
+                <img src="./images/image-currency.jpg" alt="EasyBank_cards" />
+              </div>
+
+              <div class="card-body">
+                <p class="font-xs body mt-3">By Claire Robinson</p>
+                <h5 class="title card-title" style="margin-top: 0.7rem">
+                  Receive money in any currency with no fees
+                </h5>
+
+                <p class="font-sm body" style="margin-top: 0.7rem">
+                  The world is getting smaller and we're becoming more mobile.
+                  So why should you be forced to only receive money in a single
+                  …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_3__card">
+              <div class="overflow-hidden section_3__img">
+                <img src="./images/image-restaurant.jpg" alt="EasyBank_cards" />
+              </div>
+
+              <div class="card-body">
+                <p class="font-xs body mt-3">By Wilson Hutton</p>
+                <h5 class="title card-title" style="margin-top: 0.7rem">
+                  Treat yourself without worrying about money
+                </h5>
+
+                <p class="font-sm body" style="margin-top: 0.7rem">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_3__card">
+              <div class="overflow-hidden section_3__img">
+                <img src="./images/image-plane.jpg" alt="EasyBank_cards" />
+              </div>
+
+              <div class="card-body">
+                <p class="font-xs body mt-3">By Wills Ash</p>
+                <h5 class="title card-title" style="margin-top: 0.7rem">
+                  Take your Easybank card wherever you go
+                </h5>
+
+                <p class="font-sm body" style="margin-top: 0.7rem">
+                  We want you to enjoy your travels. This is why we don't charge
+                  any fees on purchases while you're abroad. We'll even show you
+                  …
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 section_3__card">
+              <div class="overflow-hidden section_3__img">
+                <img src="./images/image-confetti.jpg" alt="EasyBank_cards" />
+              </div>
+
+              <div class="card-body">
+                <p class="font-xs body mt-3">By Claire Robinson</p>
+                <h5 class="title card-title" style="margin-top: 0.7rem">
+                  Our invite-only Beta accounts are now live!
+                </h5>
+
+                <p class="font-sm body" style="margin-top: 0.7rem">
+                  After a lot of hard work by the whole team, we're excited to
+                  launch our closed beta. It's easy to request an invite through
+                  the site ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-12 col-md-6 col-lg-3 footer__logo">
+            <img src="./images/footer-logo.svg" alt="logo" />
+
+            <div class="d-flex gap-3 mt-5">
+              <a>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+              </a>
+              <a>
+                <img src="./images/icon-youtube.svg" alt="facebook" />
+              </a>
+              <a>
+                <img src="./images/icon-twitter.svg" alt="facebook" />
+              </a>
+              <a>
+                <img src="./images/icon-pinterest.svg" alt="facebook" />
+              </a>
+              <a>
+                <img src="./images/icon-instagram.svg" alt="facebook" />
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <ul class="d-grid gap-3 mb-0 footer__links">
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none">About Us</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <ul class="d-grid gap-3 mb-0 footer__links">
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none">Careers</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none">Support</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="text-light text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-end footer__button">
+              <button class="btn main--btn rounded-5 text-light">
+                Request Invite
+              </button>
+            </div>
+
+            <p class="body fw-lighter text-end mt-3 footer__reserved">
+              &copy; Easybank. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
