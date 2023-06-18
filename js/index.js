@@ -1,0 +1,3 @@
+$("#menu").click(() => {
+  $("#menuLinks").toggle();
+});

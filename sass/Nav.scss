@@ -2,4 +2,29 @@
   height: 5rem;
   background-color: #fff;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+  &__menu {
+    background-color: transparent !important;
+  }
+}
+
+.navbar__mobile {
+  display: none;
+  top: 35%;
+  width: 90%;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  animation: menu 0.3s forwards;
+  transition: all 0.3s ease;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

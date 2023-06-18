@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -34,15 +37,12 @@
           ><img src="./images/logo.svg" alt="logo"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          style="box-shadow: none"
+          id="menu"
         >
-          <span class="navbar-toggler-icon"></span>
+          <img src="./images/icon-hamburger.svg" alt="hamburger" />
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -72,6 +72,32 @@
         </div>
       </div>
     </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div
+      class="position-fixed start-50 translate-middle navbar__mobile px-5 rounded-2"
+      id="menuLinks"
+    >
+      <div class="py-5">
+        <ul class="d-grid gap-3 px-0 mb-0">
+          <li class="text-center">
+            <a href="#" class="text-decoration-none title">Home</a>
+          </li>
+          <li class="text-center">
+            <a href="#" class="text-decoration-none title">About</a>
+          </li>
+          <li class="text-center">
+            <a href="#" class="text-decoration-none title">Contact</a>
+          </li>
+          <li class="text-center">
+            <a href="#" class="text-decoration-none title">Blog</a>
+          </li>
+          <li class="text-center">
+            <a href="#" class="text-decoration-none title">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- HERO SECTION -->
     <div class="hero position-relative">
@@ -126,7 +152,6 @@
         />
       </div>
     </div>
-
     <div
       class="mobile d-flex justify-content-end position-absolute overflow-hidden desktop__img"
     >
@@ -414,5 +439,8 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
