@@ -84,6 +84,9 @@ p {
   animation: menu 0.3s forwards;
   transition: all 0.3s ease; }
 
+#close {
+  display: none; }
+
 @keyframes menu {
   from {
     opacity: 0; }
